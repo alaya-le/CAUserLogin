@@ -1,8 +1,6 @@
 package app;
 
-import data_access.DBUserDataAccessObject;
 import data_access.InMemoryUserDataAccessObject;
-import entity.CommonUserFactory;
 import interface_adapter.ViewManagerModel;
 import interface_adapter.logged_in.LoggedInViewModel;
 import interface_adapter.login.LoginViewModel;
@@ -16,12 +14,12 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * The version of Main with an external database used to persist user data.
+ * The version of Main with in memory used to persist user data.
  */
 public class MainWithInMemory {
 
     /**
-     * The main method for starting the program with an external database used to persist user data.
+     * The main method for starting the program with an in memory data access object to persist user data.
      * @param args input to main
      */
     public static void main(String[] args) {
